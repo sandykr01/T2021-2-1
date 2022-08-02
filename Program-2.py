@@ -12,8 +12,10 @@
 
 x = int(input("Enter a number: "))
 a = 1
-seq = 1
 while a <= x:
-    print(seq,end=' ')
-    seq = seq + 2
+    seq = 1
+    for i in range(1, a+1):
+        print(seq, end=" ")
+        seq = seq + 2
+    print()
     a += 1
